@@ -38,6 +38,8 @@ li {
 	color: white;
 	width: 250px;
 	height: 30px;
+	margin-left: auto;
+	text-align: center;
 }
 
 #button1{
@@ -72,8 +74,62 @@ textarea{
 }
 #content{
 	position: absolute;
+	float: left;
+	width: 90%;
 	top: 15%;
 	display: grid;
-	grid-template-columns: 250px 250px 250px 250px;
+	//grid-template-columns: 250px 250px 250px 250px;
+	grid-template-areas: "to_do in_progress review complete";
 	//grid-template-columns: 5px 250px 5px 250px 5px 250px 5px 250px 5px;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.post{
+	background-color: lightgray;
+}
+.box{
+	width: 81%;
+	height: 480px;
+	margin-left: 19%;
+	margin-right: 5%;
+	background-color: rgb(240, 240, 240);
+	border-color: black;
+	border-width: 5px;
+	//border-bottom-right-radius: 20px;
+	//border-bottom-left-radius: 20px;
+	//border-bottom-color: black;
+}
+p{
+	text-align: center;
+	font-size: 30px;
+	border-style: solid;
+	//border-radius: 15px;
+	background: lightgray;
+	//margin-left: 10px;
+	//margin-right: 10px;
+	//margin-bottom: 10px;
+}
+#to_do{
+	grid-area: to_do;
+}
+#in_progress{
+	grid-area: in_progress;
+}
+#review{
+	grid-area: review;
+}
+#complete{
+	grid-area: complete;
+}
+#add_content{
+	//display: block;
+	display: none; //invisible
+	position: absolute;
+}
+#box_content{
+	background-color: gray;
+	display: block;
+	height: 500px;
+	width: 500px;
+	margin-left: 30%;
+	position: absolute;
 }
