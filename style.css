@@ -67,9 +67,10 @@ textarea{
 	height: 400px;
 }
 #bar_colors{
-	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	content: "green red purple light_blue";
+	display: flex;
+	/*grid-template-columns: 25% 25% 25% 25%;*/
+	flex-direction: row;
+	/*content: "green red purple light_blue";*/
 	width: 100%;
 }
 #content{
@@ -123,9 +124,9 @@ p{
 	grid-area: complete;
 }
 #add_content{
-	//display: block;
-	display: none; //invisible
-	position: absolute;
+	/*display: block;*/
+	display: none; /*invisible*/
+	position: fixed;
 	margin-left: 40%;
 	z-index: 101;
 	clear: both;	
