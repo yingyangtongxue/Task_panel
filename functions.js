@@ -16,8 +16,8 @@ $("#button1").click(function(){
 	//$("box_1").append();
 	 $("#add_content").keypress(function(e){
 	 	if(e.which == 13 || e.keyCode == 13 /*&& event.altKey*/){
-			alert('A tarefa foi adiciona');
-      console.log(input1);
+			console.log(input1);
+      alert('A tarefa foi adiciona');
 	}
   });
 }); //show box (button1 = new task)
@@ -100,12 +100,20 @@ $(document).ready(modificar_tamanho); //barra colorida movimentação
 
 let input1;
 function inputs(){
- input1=document.getElementById("first").value().reset();
+ /*input1=document.getElementById("first").value().reset();*/
  input1 = document.getElementById("first").value;
 }
-$( document ).on( 'keydown', function ( e ) {
-    if ( e.which === 18 ) { // ESC
-        let a = document.getElementById("#first").value;
-        console.log(a);
-    }
-});
+
+
+function input_name(appendOn, named){
+  let content =document.creatElement('p1');
+  content.setAttriute('class','box_1');
+  appendOn.appendChild(content);
+  let name = document.creatElement('p1');
+  if(named == 1){
+    name.appendChild(document.createTextMode(document.getElementById('#first').value));
+  }
+}
+function clear_input(){
+  document.getElementById('#first').value='';
+}
