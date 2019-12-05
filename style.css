@@ -2,10 +2,6 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	background-color: rgb(192, 197, 220);
-	font-family: Helvetica;
-}
 
 ul {
 	display: flex;
@@ -40,13 +36,10 @@ li {
 .post_bar{
 	background-color: #262626;
 	color: white;
-	width: 280px;
-	height: 40px;
+	width: 250px;
+	height: 30px;
 	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
 }
 
 #button1{
@@ -55,7 +48,6 @@ li {
 	width: 100px;
 	position: absolute; 
 	left: 90%;
-	border-radius: 15px;
 
 }
 #green{
@@ -84,10 +76,12 @@ textarea{
 #content{
 	position: absolute;
 	float: left;
-	width: 100%;
-	top: 13%;
+	width: 90%;
+	top: 15%;
 	display: grid;
+	//grid-template-columns: 250px 250px 250px 250px;
 	grid-template-areas: "to_do in_progress review complete";
+	//grid-template-columns: 5px 250px 5px 250px 5px 250px 5px 250px 5px;
 	grid-template-columns: 25% 25% 25% 25%;
 	z-index: 90;
 	clear: both;
@@ -96,24 +90,26 @@ textarea{
 	background-color: lightgray;
 }
 .box{
-	width: 280px;
-	height: 450px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 81%;
+	height: 480px;
+	margin-left: 19%;
+	margin-right: 5%;
 	background-color: rgb(240, 240, 240);
 	border-color: black;
 	border-width: 5px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-
+	//border-bottom-right-radius: 20px;
+	//border-bottom-left-radius: 20px;
+	//border-bottom-color: black;
 }
 p{
 	text-align: center;
 	font-size: 30px;
 	border-style: solid;
-	border-radius: 15px;
+	//border-radius: 15px;
 	background: lightgray;
-	margin-bottom: 3px;
+	//margin-left: 10px;
+	//margin-right: 10px;
+	//margin-bottom: 10px;
 }
 #to_do{
 	grid-area: to_do;
@@ -144,31 +140,13 @@ p{
 	position: absolute;
 }
 #first{
-	width: 70%;
-	margin-left: 37px;
-	
+	margin-left: 20px;
 }
 #second{
-	width: 70%;
-	height: 70%;
+	height: 200px;
 	position: absolute;
-	margin-left: 37px;
-
-
+	margin-left: 20px;
 }
 h5{
 	margin-left: 30%;
-}
-
-#box_1{
-	background-color: rgb(185, 255, 185);
-}
-#box_2{
-	background-color: rgb(250,128,114);
-}
-#box_3{
-	background-color: rgb(218,112,214);
-}
-#box_4{
-	background-color: rgb(135,206,235);
 }
